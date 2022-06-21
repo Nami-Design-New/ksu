@@ -1,0 +1,394 @@
+@font-face {
+  font-family: montserrat;
+  font-display: swap;
+  src: url(../webfonts/montserrat-Arabic-Regular.woff);
+}
+
+* {
+  font-family: "montserrat";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  direction: rtl;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  outline: none;
+  border-radius: 20px !important;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #008DC3;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.row {
+  margin: 0px;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .container,
+  .container-fluid {
+    padding: 0px 8px;
+  }
+}
+
+video,
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #008DC3, #004ec3);
+  overflow-x: hidden;
+}
+
+.box_BG {
+  position: fixed;
+  top: 0;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+  left: 0;
+  z-index: 1;
+}
+
+.box_BG .wave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  background: #03719c;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  -webkit-transform-origin: 50% 48%;
+          transform-origin: 50% 48%;
+  border-radius: 43%;
+  -webkit-animation: drift 14s infinite linear;
+          animation: drift 14s infinite linear;
+}
+
+.box_BG .wave.three {
+  -webkit-animation: drift 15s infinite linear;
+          animation: drift 15s infinite linear;
+  position: fixed;
+  background-color: #31b3e6;
+}
+
+.box_BG .wave.two {
+  -webkit-animation: drift 6s infinite linear;
+          animation: drift 6s infinite linear;
+  opacity: .1;
+  background: black;
+  position: fixed;
+}
+
+.box_BG .wave:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.VerificationSystem {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.VerificationSystem .formData {
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px #0000001a;
+          box-shadow: 0 4px 30px #0000001a;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 3px solid #ffffff30;
+  padding: 40px 25px;
+}
+
+.VerificationSystem .logo {
+  margin-bottom: 50px;
+}
+
+.VerificationSystem .logo img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.VerificationSystem form .title {
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.VerificationSystem form .form-control {
+  min-height: 48px;
+  text-align: start;
+  background-color: #008DC3;
+  color: #ffffff;
+  border: 2px solid #ffffff30;
+}
+
+.VerificationSystem form .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.VerificationSystem form .form-control::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: .8;
+  /* Firefox */
+}
+
+.VerificationSystem form .form-control:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: .8;
+  /* Firefox */
+}
+
+.VerificationSystem form .form-control::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: .8;
+  /* Firefox */
+}
+
+.VerificationSystem form .form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: .8;
+  /* Firefox */
+}
+
+.VerificationSystem form [type=number] {
+  direction: unset;
+}
+
+.VerificationSystem form .buttons {
+  padding: 20px 0 0px;
+}
+
+.VerificationSystem form .buttons .btn {
+  background-color: #008DC3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 5px 0px #0178a7;
+          box-shadow: 0px 5px 0px #0178a7;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  padding: 8px 24px;
+  border-radius: 8px;
+}
+
+.VerificationSystem form .buttons .btn.searchBtn {
+  background-color: #A04688;
+  -webkit-box-shadow: 0px 5px 0px #8c2b72;
+          box-shadow: 0px 5px 0px #8c2b72;
+}
+
+.VerificationSystem form .buttons .btn.cancelBtn {
+  background-color: #454545;
+  -webkit-box-shadow: 0px 5px 0px #242424;
+          box-shadow: 0px 5px 0px #242424;
+}
+
+.VerificationSystem form .buttons .btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+@media (min-width: 992px) {
+  /* Global */
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 26px !important;
+  }
+  h3 {
+    font-size: 22px !important;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+  h6 {
+    font-size: 16px !important;
+  }
+  a,
+  p {
+    font-size: 15px !important;
+  }
+}
+
+/* Tablet device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Global */
+  body {
+    font-size: 14px !important;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  h5 {
+    font-size: 16px !important;
+  }
+  h6 {
+    font-size: 15px !important;
+  }
+  a,
+  p {
+    font-size: 14px !important;
+  }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  /* Global */
+  body {
+    font-size: 12px !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 17px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  h5 {
+    font-size: 15px !important;
+  }
+  h6 {
+    font-size: 14px !important;
+  }
+  input,
+  button,
+  a,
+  p {
+    font-size: 13px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
