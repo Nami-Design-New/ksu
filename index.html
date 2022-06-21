@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
@@ -17,81 +16,98 @@
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <!-- wave BG -->
-  <div class='box_BG'>
-    <div class='wave one'></div>
-    <div class='wave two'></div>
-    <div class='wave three'></div>
-  </div>
+
   <!-- end wave BG -->
-  <section class="verificationSystem">
-    <div class="container ">
-      <div class="row justify-content-center align-items-center  ">
-        <div class="  col-md-10 col-lg-8  formData">
-          <!-- logo -->
-          <div class="logo">
-            <img src="img/logoW.png" alt="">
+  <section class="verificationSystem animated flipInX">
+    <!-- logo -->
+    <div class="logo">
+      <img src="img/logoW.png" alt="">
+    </div>
+    <!-- end logo -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+            aria-expanded="true" aria-controls="collapse1">
+            <i class="fas fa-users me-2"></i>
+            <h6> نظام التحقق من البيانات </h6>
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+          <div class="accordion-body">
+            <!-- form -->
+            <form action="" class="verificationForm">
+              <div class="row align-items-center">
+                <div class="col-md-2 p-2">
+                  <label for="code"> كود التحقق </label>
+                </div>
+                <div class="col-md-4 p-2">
+                  <input type="number" class="form-control" id="code">
+                </div>
+              </div>
+              <div class="row">
+                <div class="buttons col-md-4 offset-md-2">
+                  <button type="submit" class="btn searchBtn"> <i class="fa-regular fa-magnifying-glass ms-1"></i> بحث
+                  </button>
+                  <button type="button" class="btn cancelBtn ms-3"> الغاء </button>
+                </div>
+              </div>
+            </form>
+            <!-- end form -->
+            <!-- search Data -->
+            <div class=" searchData">
+              <div class="title">
+                <i class="fas fa-users me-2"></i>
+                <h5> بيانات خطاب التعريف </h5>
+              </div>
+              <div class="userData">
+                <!-- info -->
+                <div class="info row align-items-center">
+                  <label class="col-md-2 p-1"> الإسم : </label>
+                  <div class="col-md-4 p-1">
+                    <input disabled class="form-control" type="text" value=" سعود عشوان مخلف العنزى ">
+                  </div>
+                </div>
+                <!-- info -->
+                <div class="info row align-items-center">
+                  <label class="col-md-2 p-1"> الوظيفة : </label>
+                  <div class="col-md-4 p-1">
+                    <input disabled class="form-control" type="text" value=" مراقب أمن و سلامة ">
+                  </div>
+                </div>
+                <!-- info -->
+                <div class="info row align-items-center">
+                  <label class="col-md-2 p-1"> تاريخ التعيين فى الجامعة : </label>
+                  <div class="col-md-4 p-1">
+                    <input disabled class="form-control" type="text" value=" 1431/04/01 ">
+                  </div>
+                </div>
+                <!-- info -->
+                <div class="info row align-items-center">
+                  <label class="col-md-2 p-1"> تاريخ بداية العقد : </label>
+                  <div class="col-md-4 p-1">
+                    <input disabled class="form-control" type="text" value="  ">
+                  </div>
+                </div>
+                <!-- info -->
+                <div class="info row align-items-center">
+                  <label class="col-md-2 p-1"> تاريخ الطباعة : </label>
+                  <div class="col-md-4 p-1">
+                    <input disabled class="form-control" type="text" value="  1443-11-21 ">
+                  </div>
+                </div>
+                <!-- info -->
+                <div class="info row align-items-center">
+                  <label class="col-md-2 p-1"> الراتب الإجمالي : </label>
+                  <div class="col-md-4 p-1"> 
+                    <input disabled class="form-control" type="text" value=" 12775 ">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- end logo -->
-          <!-- form -->
-          <form action="" class="verificationForm">
-            <div class="title">
-              <i class="fa-solid fa-shield-keyhole me-2"></i>
-              <h4> نظام التحقق من البيانات </h4>
-            </div>
-            <div class="form-group">
-              <!-- <label for="code"> كود التحقق </label> -->
-              <input type="number" class="form-control" id="code" placeholder=" ادخل كود التحقق هنا... ">
-            </div>
-            <div class="buttons">
-              <button type="button" class="btn cancelBtn"> الغاء </button>
-              <button type="submit" class="btn searchBtn"> بحث <i class="fa-brands fa-searchengin ms-1"></i> </button>
-            </div>
-          </form>
-          <!-- end form -->
         </div>
-        <!-- search Data -->
-        <div class="col-md-10 col-lg-8  searchData">
-          <div class="title">
-            <i class="fas fa-users-gear me-2"></i>
-            <h4> بيانات خطاب التعريف </h4>
-          </div>
-          <div class="userData">
-            <!-- info -->
-            <div class="info row">
-              <h6 class="col-sm-4 p-1"> الإسم : </h6>
-              <p class="col-sm-8 p-1"> سعود عشوان مخلف العنزى </p>
-            </div>
-            <!-- info -->
-            <div class="info row">
-              <h6 class="col-sm-4 p-1"> الوظيفة : </h6>
-              <p class="col-sm-8 p-1"> مراقب أمن و سلامة </p>
-            </div>
-            <!-- info -->
-            <div class="info row">
-              <h6 class="col-sm-4 p-1"> تاريخ التعيين فى الجامعة : </h6>
-              <p class="col-sm-8 p-1"> 1431/04/01 </p>
-            </div>
-            <!-- info -->
-            <div class="info row">
-              <h6 class="col-sm-4 p-1"> تاريخ بداية العقد : </h6>
-              <p class="col-sm-8 p-1"> </p>
-            </div>
-            <!-- info -->
-            <div class="info row">
-              <h6 class="col-sm-4 p-1"> تاريخ الطباعة : </h6>
-              <p class="col-sm-8 p-1"> 1443-11-21 </p>
-            </div>
-            <!-- info -->
-            <div class="info row">
-              <h6 class="col-4 p-1"> الراتب الإجمالي : </h6>
-              <p class="col-sm-8 p-1"> 12775 </p>
-            </div>
-          </div>
-        </div>
-        <!-- end search Data -->
       </div>
     </div>
   </section>
@@ -108,5 +124,4 @@
   <script src="js/jquery.appear.js"></script>
   <script src="js/Custom.js"></script>
 </body>
-
 </html>
