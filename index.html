@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
@@ -13,11 +14,10 @@
   <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/fontawesome.min.css">
-  <!-- aos -->
-  <link rel="stylesheet" href="css/aos.css">
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <!-- wave BG -->
   <div class='box_BG'>
@@ -26,16 +26,19 @@
     <div class='wave three'></div>
   </div>
   <!-- end wave BG -->
-  <section class="VerificationSystem">
+  <section class="verificationSystem">
     <div class="container ">
       <div class="row justify-content-center align-items-center  ">
         <div class="  col-md-10 col-lg-8  formData">
+          <!-- logo -->
           <div class="logo">
             <img src="img/logoW.png" alt="">
           </div>
-          <form action="">
+          <!-- end logo -->
+          <!-- form -->
+          <form action="" class="verificationForm">
             <div class="title">
-              <i class="fas fa-users-gear me-2"></i>
+              <i class="fa-solid fa-shield-keyhole me-2"></i>
               <h4> نظام التحقق من البيانات </h4>
             </div>
             <div class="form-group">
@@ -44,10 +47,51 @@
             </div>
             <div class="buttons">
               <button type="button" class="btn cancelBtn"> الغاء </button>
-              <button type="submit" class="btn searchBtn">  بحث <i class="fa-brands fa-searchengin ms-1"></i> </button>
+              <button type="submit" class="btn searchBtn"> بحث <i class="fa-brands fa-searchengin ms-1"></i> </button>
             </div>
           </form>
+          <!-- end form -->
         </div>
+        <!-- search Data -->
+        <div class="col-md-10 col-lg-8  searchData">
+          <div class="title">
+            <i class="fas fa-users-gear me-2"></i>
+            <h4> بيانات خطاب التعريف </h4>
+          </div>
+          <div class="userData">
+            <!-- info -->
+            <div class="info row">
+              <h6 class="col-sm-4 p-1"> الإسم : </h6>
+              <p class="col-sm-8 p-1"> سعود عشوان مخلف العنزى </p>
+            </div>
+            <!-- info -->
+            <div class="info row">
+              <h6 class="col-sm-4 p-1"> الوظيفة : </h6>
+              <p class="col-sm-8 p-1"> مراقب أمن و سلامة </p>
+            </div>
+            <!-- info -->
+            <div class="info row">
+              <h6 class="col-sm-4 p-1"> تاريخ التعيين فى الجامعة : </h6>
+              <p class="col-sm-8 p-1"> 1431/04/01 </p>
+            </div>
+            <!-- info -->
+            <div class="info row">
+              <h6 class="col-sm-4 p-1"> تاريخ بداية العقد : </h6>
+              <p class="col-sm-8 p-1"> </p>
+            </div>
+            <!-- info -->
+            <div class="info row">
+              <h6 class="col-sm-4 p-1"> تاريخ الطباعة : </h6>
+              <p class="col-sm-8 p-1"> 1443-11-21 </p>
+            </div>
+            <!-- info -->
+            <div class="info row">
+              <h6 class="col-4 p-1"> الراتب الإجمالي : </h6>
+              <p class="col-sm-8 p-1"> 12775 </p>
+            </div>
+          </div>
+        </div>
+        <!-- end search Data -->
       </div>
     </div>
   </section>
@@ -62,7 +106,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/jquery.appear.js"></script>
-  <script src="js/aos.js"></script>
   <script src="js/Custom.js"></script>
 </body>
+
 </html>
