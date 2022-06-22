@@ -115,6 +115,11 @@ body {
   margin: 20px 10%;
   background-color: $mainColor;
   padding: 50px 16px;
+  label{
+    font-family: "HelveticaNeueBold";
+    font-size: 13px;
+    font-weight: 600;
+  }
 
   .logo {
     padding-bottom: 20px;
@@ -145,7 +150,7 @@ body {
 }
 
 .searchData {
-  padding: 30px 20px;
+  padding: 30px 10px;
 
   .title {
     color: #5b5b5b;
@@ -163,7 +168,8 @@ body {
 
   label{
     font-family: "HelveticaNeueBold";
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 600;
   }
   input[disabled] {
     cursor: not-allowed;
@@ -241,8 +247,8 @@ body {
 }
 
 .accordion-body {
-  padding: 10px;
-  padding-bottom: 30px;
+  padding: 6px 4px;
+  padding-bottom: 10px;
 
 }
 

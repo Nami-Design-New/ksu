@@ -99,6 +99,12 @@ body {
   padding: 50px 16px;
 }
 
+.verificationSystem label {
+  font-family: "HelveticaNeueBold";
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .verificationSystem .logo {
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -127,7 +133,7 @@ body {
 }
 
 .searchData {
-  padding: 30px 20px;
+  padding: 30px 10px;
 }
 
 .searchData .title {
@@ -149,7 +155,8 @@ body {
 
 .searchData label {
   font-family: "HelveticaNeueBold";
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .searchData input[disabled] {
@@ -228,8 +235,8 @@ body {
 }
 
 .accordion-body {
-  padding: 10px;
-  padding-bottom: 30px;
+  padding: 6px 4px;
+  padding-bottom: 10px;
 }
 
 [type=number] {
